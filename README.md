@@ -4,7 +4,7 @@ A mini shape viewer application made using Blockly. When any of the 9 shape butt
 # custom block
 I have built a custom block "display_shape" which has an options dropdown to select the name of the shape to be displayed.
 
-<code>
+<code> <pre>
 Blockly.common.defineBlocksWithJsonArray([ <br/>
   {
     type: "display_shape", 
@@ -36,5 +36,6 @@ Blockly.JavaScript["display_shape"] = function (block) { <br>
   let value = "'" + block.getFieldValue("VALUE") + "'"; <br>
   return "ShapeViewer.addShape(" + value + ");\n"; <br>
 }; <br>
+</pre>
 </code>
 
