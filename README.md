@@ -5,13 +5,13 @@ A mini shape viewer application made using Blockly. When any of the 9 shape butt
 I have built a custom block "display_shape" which has an options dropdown to select the name of the shape to be displayed.
 
 <code>
-Blockly.common.defineBlocksWithJsonArray([ <br>
-  { <br>
-    type: "display_shape", <br>
-    message0: "Print %1", <br>
-    args0: [ <br>
-      { <br>
-        type: "field_dropdown", <br>
+Blockly.common.defineBlocksWithJsonArray([ <br/>
+  {
+    type: "display_shape", 
+    message0: "Print %1", <br/>
+    args0: [
+      { 
+        type: "field_dropdown",
         name: "VALUE", <br>
         options: [ <br>
           ["Circle", "circle"], <br>
