@@ -5,37 +5,37 @@ A mini shape viewer application made using Blockly. When any of the 9 shape butt
 I have built a custom block "display_shape" which has an options dropdown to select the name of the shape to be displayed.
 
 <code> <pre>
-Blockly.common.defineBlocksWithJsonArray([ <br/>
+Blockly.common.defineBlocksWithJsonArray([ 
   {
     type: "display_shape", 
-    message0: "Print %1", <br/>
+    message0: "Print %1",
     args0: [
       { 
         type: "field_dropdown",
-        name: "VALUE", <br>
-        options: [ <br>
-          ["Circle", "circle"], <br>
-          ["Square", "square"], <br>
-          ["Rectangle", "rectangle"], <br>
-          ["Triangle", "triangle"], <br>
-          ["Semi-circle", "semi-circle"], <br>
-          ["Quarter-circle", "quarter-circle"], <br>
+        name: "VALUE", 
+        options: [ 
+          ["Circle", "circle"], 
+          ["Square", "square"], 
+          ["Rectangle", "rectangle"], 
+          ["Triangle", "triangle"], 
+          ["Semi-circle", "semi-circle"], 
+          ["Quarter-circle", "quarter-circle"], 
           ["Crescent", "crescent"], <br>
           ["Oval", "oval"], <br>
-          ["Parallelogram", "parallelogram"], <br>
-        ], <br>
-      }, <br>
-    ], <br>
-    previousStatement: null, <br>
-    nextStatement: null, <br>
-    colour: 355, <br>
-  }, <br>
-]); <br>
+          ["Parallelogram", "parallelogram"], 
+        ], 
+      }, 
+    ], 
+    previousStatement: null, 
+    nextStatement: null, 
+    colour: 355, 
+  }, 
+]); 
 
-Blockly.JavaScript["display_shape"] = function (block) { <br>
-  let value = "'" + block.getFieldValue("VALUE") + "'"; <br>
-  return "ShapeViewer.addShape(" + value + ");\n"; <br>
-}; <br>
+Blockly.JavaScript["display_shape"] = function (block) { 
+  let value = "'" + block.getFieldValue("VALUE") + "'"; 
+  return "ShapeViewer.addShape(" + value + ");\n"; 
+};
 </pre>
 </code>
 
