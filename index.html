@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blockly for the Web Codelab</title>
+
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+
+  <body mode="maker">
+    <header class="mdl-color--cyan-500">
+      <h1 class="mode-maker">Shapes</h1>
+      <h1 class="mode-edit mode-blockly">Shapes Configuration</h1>
+    </header>
+
+    <main>
+      <button class="mode-maker mdl-button" id="edit">Edit</button>
+      <button class="mode-edit mdl-button mdl-js-button" id="done">Done</button>
+      <button class="mode-blockly mdl-button mdl-js-button" id="save">
+        Save
+      </button>
+      <p class="hint mode-edit">Click on shapes to add their code</p>
+
+      <div id="viewer"></div>
+
+      <div class="controls">
+        <div>
+          <div class="button mdl-color--amber-500">square</div>
+          <div class="button mdl-color--yellow-500">circle</div>
+          <div class="button mdl-color--lime-500">rectangle</div>
+        </div>
+        <div>
+          <div class="button mdl-color--pink-500">triangle</div>
+          <div class="button mdl-color--red-500">semi-circle</div>
+          <div class="button mdl-color--light-green-500">quarter-circle</div>
+        </div>
+        <div>
+          <div class="button mdl-color--cyan-500">crescent</div>
+          <div class="button mdl-color--teal-500">oval</div>
+          <div class="button mdl-color--green-500">parallelogram</div>
+        </div>
+      </div>
+
+      <div class="blockly-editor">
+        <div id="blocklyDiv" style="height: 100%; width: 100%"></div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/blockly"></script>
+    <script src="scripts/shape_blocks.js"></script>
+    <script src="scripts/shape_viewer.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
