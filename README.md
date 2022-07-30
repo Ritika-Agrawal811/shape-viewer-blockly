@@ -1,7 +1,7 @@
 # shape-viewer-blockly
 A mini shape viewer application made using Blockly. When any of the 9 shape buttons are clicked its respsctive shape is displayed in the left window.
 
-# custom block
+### custom block
 I have built a custom block "display_shape" which has an options dropdown to select the name of the shape to be displayed.
 
 <code> <pre>
